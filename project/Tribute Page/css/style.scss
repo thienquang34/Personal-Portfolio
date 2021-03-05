@@ -1,0 +1,49 @@
+figcaption{
+    padding-top: 20px;
+}
+li{
+    padding: 10px 0;
+    list-style-type:circle;
+    
+}
+blockquote{
+    font-style: italic;
+    padding-top: 40px;
+}
+.content{
+    background-color: #eee;
+    &__title{
+        padding:20px 0;
+    }
+    &__image{
+        width: 98%;
+        height: 95vh;
+        background-color: #fff;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    &__list{
+        padding-top: 30px;
+        &--intro{
+            padding-top: 30px;
+            width: 40%;
+            text-align: left;
+        }
+    }
+}
+.content__list.animate{
+    animation: entrance;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes entrance{
+    from{
+        opacity: 0;
+        top: 100px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}

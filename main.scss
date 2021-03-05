@@ -1,0 +1,366 @@
+$nav_color: #BE3144;
+$banner_color: #202023;
+$work_color: #45567D;
+$contact_color: #303841; 
+$background:rgba(0, 0, 0, 0.2);
+
+body{
+    position: relative;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: $nav_color;
+    &__ul{
+        &--title{
+            font-size: 1.8rem;
+            width: 15rem;
+            color: aliceblue;
+            position: absolute;
+            left: 5rem;
+        }
+        &--li{
+            width: 10rem;
+            line-height:3rem;
+            
+        }
+        &--link{
+            color: aliceblue;
+            width: 10rem;
+            height: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        &--link:hover{
+            background-color: $work_color;
+            color: aliceblue;
+        }
+    }
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: $banner_color;
+    position: relative;
+    &__div{
+        width: 100%;
+        max-height: 100%;
+        text-align: center;
+    }
+    &__title{
+        color: aliceblue;
+        font-size: 5rem;
+        font-family: 'Yeon Sung', cursive;
+    }
+    &__info{
+        color: $nav_color;
+        font-size:2rem;
+        font-style: italic;
+        font-family: 'Yeon Sung', cursive;
+    }
+    &__next{
+        background-color: unset;
+        color: aliceblue;
+        padding-top: 2rem;
+        font-size: 2rem;
+        &--button{
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 12px 25px;
+            font-family: verdana, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+.about{
+    width: 100%;
+    height: 92vh;
+    background-color: $background;
+    &__title{
+        width: 100%;
+        height: 3rem;
+        background-color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    &__row{
+        position: relative;
+        &--col-left{
+            margin: 0;
+            max-height: 100%;
+            height: 84vh;
+            border-right: solid 1px black;
+        }
+        &--col-right{
+            max-height: 100%;
+            height: 84vh;
+            border-left: solid 1px black;
+        }
+        &--image{
+            height: 180px;
+            width: 180px;
+            border-radius: 100%;
+            background-color: #bdbdbd;
+        }
+        &--intro{
+            padding-top: 2rem;
+        }
+        &--info{
+            list-style-type: disc;
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+        &--button{
+            position: absolute;
+            bottom: 1rem;
+            right: 5rem;
+            background-color: $nav_color;
+        }
+    }
+}
+.work{
+    width: 100%;
+    height: 150vh;
+    background-color: $background;
+    &__title{
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: underline;
+        padding-top: 1rem;
+        font-weight:bold;
+    }
+    &__row{
+        padding-top: 4rem;
+        &--button{
+            position: absolute;
+            bottom: 45rem;
+            right: 4rem;
+            background-color: $nav_color;
+        }
+    }
+    &__project{
+        &--image{
+            width: 18rem;
+            height: 20rem;
+        }
+    }
+    &__project p{
+        font-size: 1.4rem;
+        color: black;
+        text-align: center;
+        height: 2.5rem;
+        background-color:gray;
+    }
+}
+.contact{
+    width: 100%;
+    height: 92vh;
+    background-color: $background;
+    &__title{
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        &--h1{
+            color: $banner_color;
+            font-size: 5rem;
+            font-family: 'Yeon Sung', cursive;
+        }
+        &--text{
+            width: 100%;
+        }
+    }
+    &__email{
+        width: 100%;
+        text-align: left;
+        padding-left: 8rem;
+        &--email{
+            width: 100%;
+            padding-left: 2rem;
+        }
+    }
+    &__link{
+        width: 100%;
+        text-align: center;
+        &--button{
+            color: #ffffff;
+            width: 7rem;
+            height: 2.5rem;
+            font-size: 18px;
+            display: block;
+            margin: auto;
+            padding-top: 7px;
+            text-align: center;
+        }
+        &--facebook{
+            background-color: rgba(111, 159, 203, 0.5);
+        }
+        &--linkedin{
+            
+            background-color: rgba(1, 119, 181, 0.45);
+        }
+        &--github{
+            
+            background-color: rgba(139, 133, 120, 1);
+            
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .work{
+        height: 100vh;
+        &__row--button{
+            bottom: 85rem;
+        }
+    }
+}
+@media only screen and (max-width:992px){
+
+}
+@media only screen and (max-width: 767px){
+    .nav{
+        &__ul{
+            
+            &--title{
+                display:none;
+                font-size: 0px;
+            }
+            &--link{
+                all:none;
+                display: inline;
+            }
+        }
+    }
+    .work{
+        height: 253vh;
+        &__row{
+            all:none;
+            &--button{
+                right: 3rem;
+                bottom: 47rem;
+            }
+        }
+        &__project{
+        }
+        
+    }
+    .contact{
+        height: 101vh;
+        &__email{
+            padding-left: unset;
+            &--email{
+                padding-left: unset;
+            }
+        }
+        &__link{
+            display: inline;
+            &--button{
+                
+            }
+        }
+    }
+}
+@media only screen and (max-width: 415px){
+    .nav{
+        all: unset;
+        // position: relative;
+        // // width: 100%;
+        // height: 4rem;
+        background-color: $nav_color;
+        &__ul{
+            all: unset;
+            width: 100%;
+            // height: 3rem;
+            li{
+                width: 3rem;
+                font-size: 0.5rem;
+                display: flex;
+                align-content: center;
+            }
+            &--title{
+                all: unset;
+                display: none;
+                // font-size: 1rem;
+                // width: 3.8rem;
+                // color: aliceblue;
+                // position: absolute;
+                // left: 0.5rem;
+            }
+            &--li{
+                all: unset;
+                // width: 4.8rem;
+                // width: 2rem;
+                // line-height:3rem;
+            }
+            &--link{
+                all:unset;
+                // color: aliceblue;
+                // width: 1rem;
+                // height: 100%;
+                max-width: 100%;
+                text-align: center;
+                // font-size: 1rem;
+            }
+            &--link:hover{
+                background-color: $work_color;
+                color: aliceblue;
+            }
+        }
+    }
+    .home{
+        &__next p{
+            font-size: 1.2rem;
+        }
+    }
+    .about{
+        &__row{
+            &--image{
+                width: 150px;
+                height: 150px;
+                margin:auto;
+            }
+            &--image img{
+                width: 150px;
+                height: 150px;
+            }
+            &--intro{
+                text-align: center;
+            }
+            &--intro h2{
+                display: inline;
+                font-size: 18px;
+            }
+            &--intro h5{
+                display: inline;
+                font-size: 15px;
+            }
+            &--info li{
+                font-size: 18px;
+                margin: auto;
+            }
+        }
+    }
+    .work{
+        height: 270vh;
+        &__row{
+            display: inline-block;
+            &--button{
+                right: 3rem;
+                bottom: 53rem;
+            }
+        }
+        &__project{ 
+            margin:auto;
+        }
+    }
+    .contact{
+        height: 110vh;
+        &__email{
+            &--email{
+                padding-top: 0.5rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

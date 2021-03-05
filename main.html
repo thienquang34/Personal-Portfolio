@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <script src="jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="main.js"></script>
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">  
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <nav class="nav navbar navbar-expand-sm fixed-top justify-content-end">
+            <ul class="navbar-nav nav__ul scroll">
+                <li class="nav-item">
+                    <a href="main.html" class="nav-link nav__ul--title">Personal Portfolio</a>
+                </li>
+                <li class="nav-item nav__ul--li d-flex align-content-center">
+                    <a href="#home" class="nav-link nav__ul--link">Home</a>
+                </li>
+                <li class="nav-item nav__ul--li d-flex align-content-center">
+                    <a href="#about" class="nav-link nav__ul--link">About</a>
+                </li>
+                <li class="nav-item nav__ul--li d-flex align-content-center">
+                    <a href="#work" class="nav-link nav__ul--link">Work</a>
+                </li>
+                <li class="nav-item nav__ul--li d-flex align-content-center">
+                    <a href="#contact" class="nav-link nav__ul--link">Contact</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="home d-flex flex-wrap align-content-center justify-content-center" id="home">
+        <div class="home__div">
+            <h1 class="home__title animate__animated animate__zoomIn">Hey I am Quang</h1>
+            <p class="home__info">a web developer</p>
+            <div class="home__next scroll">
+                <p >I'm a student and Front End Web Developer.Know a little more</p>
+                <a href="#about" class="home__next--button">Start</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about__title">
+            About
+        </div>
+        <div class="about__row row ">
+            <div class="col about__row--col-left d-flex flex-wrap align-content-center justify-content-center">
+                <div>
+                    <div class="about__row--image">
+                        <img src="image/cv.jpg" alt="avatar" class="rounded-circle mx-auto d-block" width="200px" height="200px"/>
+                    </div>
+                    <div class="about__row--intro">
+                        <h2><strong>Nguyễn Thiện Quang</strong></h2>
+                        <h5>Front End Web Developer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col about__row--col-right d-flex flex-wrap align-content-center justify-content-start">
+                <div>
+                    <ul class="about__row--info">
+                        <li><strong>Full name:</strong> Nguyễn Thiện Quang</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>Age:</strong> 21</li>
+                        <li><strong>Languages:</strong> HTML, CSS, JavaScript, PHP</li>
+                        <li><strong>Frameworks:</strong> Bootstrap, jQuery, ReactJS...</li>
+                    </ul>
+                </div>
+                <div class="scroll">
+                    <a href="#work" class="home__next--button about__row--button">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work" id="work">
+        <div class="about__title">
+            Work
+        </div>
+        <div class="work__title">
+            There are some of my projects
+        </div>
+        <div class="container work__contain">
+            <div class="row d-flex justify-content-between work__row">
+                <div class="work__project">
+                    <a href="project/Tribute Page/index.html" target="_blank">
+                        <img src="image/tribute.png" alt="" class="work__project--image">
+                        <p>Tribute Page</p>
+                    </a>
+                </div>
+                <div class="work__project">
+                    <a href="project/Survey Form/index.html" target="_blank">
+                        <img src="image/surveyform.png" alt="" class="work__project--image">
+                        <p>Survey Form</p>
+                    </a>
+                </div>
+                <div class="work__project">
+                    <a href="project/caculator/index.html" target="_blank">
+                        <img src="image/cuculator.png" alt="" class="work__project--image">
+                        <p>Caculator</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between work__row">
+                <div class="work__project">
+                    <a href="project/countdown/index.html" target="_blank">
+                        <img src="image/countdown.png" alt="" class="work__project--image">
+                        <p>Countdown</p>
+                    </a>
+                </div>
+                <!-- <div class="work__project">
+
+                </div>
+                <div class="work__project">
+
+                </div> -->
+                <div class="scroll">
+                    <a href="#contact" class="home__next--button work__row--button">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="about__title">
+            Contact
+        </div>
+        <div class="contact__title d-flex flex-wrap align-content-center justify-content-start">
+            <div class="contact__title--text">
+                <h1 class="contact__title--h1">Let's works together</h1>
+                <p>How do you take your coffee?</p>
+            </div>
+            
+        </div>
+        <div class="row contact__email d-flex flex-wrap align-content-center justify-content-start">
+            <div class="col-sm-8 contact__email--email">
+                <h4>Want to contact me? You can find me here:</h4>
+                <p>Email: thienquangfe@gmail.com</p>
+                <p>Phone: 0378 176 121</p>
+            </div>
+            <div class="col-sm-1 contact__link">
+                <div class="contact__link--button">
+                    <a href="https://www.facebook.com/profile.php?id=100030334966112" class="contact__link--button contact__link--facebook">Facebook</a><br>
+                    
+                    <a href="https://www.linkedin.com/in/quang-nguy%E1%BB%85n-thi%E1%BB%87n-705b92204/" class="contact__link--button contact__link--linkedin">LinkedIn</a><br>
+                        
+                    <a href="https://github.com/thienquang3420" class="contact__link--button contact__link--github">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
